@@ -1,0 +1,9 @@
+imgG = imread("../img/noise/gaussian.png");
+imgP = imread("../img/noise/poisson.png");
+imgSP = imread("../img/noise/salt_pepper.png");
+imwrite(imresize(imgG, 2), "../img/upsample/gaussian_up2.png");
+imwrite(imresize(imgP, 2), "../img/upsample/poisson_up2.png");
+imwrite(imresize(imgSP, 2), "../img/upsample/salt_pepper_up2.png");
+imwrite(imresize(imgG, 4), "../img/upsample/gaussian_up4.png");
+imwrite(imresize(imgP, 4), "../img/upsample/poisson_up4.png");
+imwrite(imresize(imgSP, 4), "../img/upsample/salt_pepper_up4.png");
